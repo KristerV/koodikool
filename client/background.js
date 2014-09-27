@@ -1,12 +1,14 @@
 Template.background.rendered = function() {
-	var width = $(document).width()
-	var extraScroll = 100
-	var height = $(document).height() + extraScroll
 
-	var t = new Trianglify({noiseIntensity: 0});
-	var pattern = t.generate(width, height);
-	$('.background').css('height', height)
-	$('.background').css('background-image', pattern.dataUrl)
+    var extraScroll = 30
+    var width = $(document).width()
+    var width = $(document).width()
+    var height = $(document).height() + extraScroll
+
+    var t = new Trianglify({noiseIntensity: 0});
+    var pattern = t.generate(width, height);
+    $('.background').css('height', height)
+    $('.background').css('background-image', pattern.dataUrl)
 }
 
 $(window).scroll( function(e) {
@@ -25,4 +27,4 @@ $(window).scroll( function(e) {
 
     // Set value
     $('.background').css('margin-top', -backgroundScrollPercent)
-});
+})
