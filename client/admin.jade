@@ -1,5 +1,6 @@
 template(name="admin")
-	.admin
-		form(name="text")
-			textarea(name="text") {{content}}
-			input(type="submit")
+	if isAdmin
+		.admin
+			form(name="text")
+				textarea(name="text") {{content}}
+				input(type="submit")

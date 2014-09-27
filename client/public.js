@@ -6,7 +6,9 @@ Template.public.helpers({
 })
 
 Template.public.rendered = function() {
-	var t = new Trianglify();
+	var t = new Trianglify({
+		noiseIntensity: 0,
+	});
 	var pattern = t.generate($(document).width(), $(document).height());
 	document.body.setAttribute('style', 'background-image: '+pattern.dataUrl);
 }

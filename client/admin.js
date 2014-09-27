@@ -2,6 +2,9 @@ Template.admin.helpers({
 	content: function() {
 		if (!_.isUndefined(Collection.findOne('text')))
 			return Collection.findOne('text').text
+	},
+	isAdmin: function() {
+		return Session.get('admin')
 	}
 })
 
