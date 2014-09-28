@@ -23,5 +23,5 @@ Template.admin.events({
 Template.admin.rendered = function() {
 	Meteor.setTimeout(function(){
 		$('textarea').elastic()
-	}, 100)
+	}, 1000)
 }
