@@ -6,15 +6,21 @@ html, body {
 }
 body {
 	.public, .admin, .apply {
-		position: relative;
-		top: 1em;
-		background-color: rgba(255,255,255,0.7);
+		// position: relative;
+		// top: 1em;
+		background-color: rgba(255,255,255,0.6);
 		max-width: 600px;
 		margin: 0 auto;
 		margin-bottom: 1em;
 		padding: 1.5em;
 		-webkit-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.4);
 		box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.4);
+		&:first-child {
+			margin-top: 10em;
+		}
+		&:last-child {
+			margin-bottom: 15em;
+		}
 	}
 	textarea {
 		width: 100%;
