@@ -19,3 +19,9 @@ Template.admin.events({
 			MainCollection.update('text', {$set: {text: value}})
 	}
 })
+
+Template.admin.rendered = function() {
+	Meteor.setTimeout(function(){
+		$('textarea').elastic()
+	}, 100)
+}
