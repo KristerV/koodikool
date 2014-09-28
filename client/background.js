@@ -1,7 +1,6 @@
 Template.background.rendered = function() {
 
-    var extraScroll = 30
-    var width = $(document).width()
+    var extraScroll = -($(document).height() - $(window).height()) / 1.1
     var width = $(document).width()
     var height = $(document).height() + extraScroll
 
@@ -14,7 +13,8 @@ Template.background.rendered = function() {
 $(window).scroll( function(e) {
 
 	// Get variables
-    var currentScroll = $(window).scrollTop()
+    var currentScroll = $(document).scrollTop()
+    console.log(currentScroll)
     var backgroundHeight = $('.background').height()
     var windowHeight = $(window).height()
     var documentHeight = $(document).height()
@@ -27,4 +27,5 @@ $(window).scroll( function(e) {
 
     // Set value
     $('.background').css('margin-top', -backgroundScrollPercent)
+    console.log(backgroundScrollPercent)
 })
