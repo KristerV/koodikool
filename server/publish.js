@@ -1,3 +1,3 @@
 Meteor.publish("main", function () {
-	return Collection.find()
+	return MainCollection.find()
 });

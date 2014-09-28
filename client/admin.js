@@ -1,7 +1,7 @@
 Template.admin.helpers({
 	content: function() {
-		if (!_.isUndefined(Collection.findOne('text')))
-			return Collection.findOne('text').text
+		if (!_.isUndefined(MainCollection.findOne('text')))
+			return MainCollection.findOne('text').text
 	},
 	isAdmin: function() {
 		return Session.get('admin')
@@ -13,9 +13,9 @@ Template.admin.events({
 		e.preventDefault()
 		var value = $('textarea').val()
 
-		if (_.isUndefined(Collection.findOne('text')))
-			Collection.insert({_id: 'text', text: value})
+		if (_.isUndefined(MainCollection.findOne('text')))
+			MainCollection.insert({_id: 'text', text: value})
 		else
-			Collection.update('text', {$set: {text: value}})
+			MainCollection.update('text', {$set: {text: value}})
 	}
 })

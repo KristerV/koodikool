@@ -4,3 +4,5 @@ admin = function(){
 	else
 		Session.set('admin', true)
 }
+
+Meteor.subscribe("main")

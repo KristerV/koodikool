@@ -1,7 +1,7 @@
 Template.public.helpers({
 	content: function() {
-		if (!_.isUndefined(Collection.findOne('text')))
-			return marked(Collection.findOne('text').text)
+		if (!_.isUndefined(MainCollection.findOne('text')))
+			return marked(MainCollection.findOne('text').text)
 	}
 })
 
