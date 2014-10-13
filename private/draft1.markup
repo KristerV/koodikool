@@ -1,0 +1,24 @@
+NB! Leht on veel pidevas muutumises.
+
+## Mis jutt see on, et progemine on keeruline? EI OLE! 
+
+Koodikoolis õpid kogenud arendajate juhendamisel kuidas on kõige kiirem ja praktilisem viis teha veebiäppe, mis töötavad nii arvutis kui ka mistahes nutiseadmetel.
+
+## Sina ütled mida tahad teha, meie näitame kuidas seda teha.
+
+Parim viis midagi selgeks saada on mõni enda idee päriselt valmis teha. Sellepärast ongi õppekava aluseks sinu enda välja mõeldud rakendus. Aitame ka ideed kohandada selliselt, et see oleks tehtav lühikese ajaga ja oleks su oskustega kooskõlas. Algajatele on spetsiaalne kiirkursus.
+
+## JavaScriptiga rikkaks!
+
+JavaScript on vaikselt kujunemas põhiliseks veebikeeleks. See on möödapääsmatu, sest see ongi ainuke keel, mida browserid oskavad rääkida. Suurt populaarsust koguv Node.js laseb ka serveri poolset koodi JavaScriptis kirjutada - eriti mugav. 
+
+Meie ülesanne on aga õppida selgeks Meteor.js, mis on samuti JavaScripti põhine. Selle raamistiku suur eelis on aga see, et andmevahetus, ehk üks veebilehtede põhikomponentidest, on tehtud üli lihtsaks. Kunagi varem pole nii kiiresti häid veebilehti suudetud toota. Tal on veel suurepärane Androidi ja iOS tugi, et ka mobiilseid äppe valmistada.
+
+Progemise põhimõtted on keeltel väga sarnased. Pärast JavaScripti on palju lihtsam edasi minna tõsisemate keelte peale, nagu Python või Java. 
+
+## “Infotehnoloogiat vajab igaüks. Meil pole varsti enam niisama arste ega juriste, vaid IT-spetsialistidest arstid ja juristid. Iga eluala tulevik on digitaalne." <span style="font-size: 0.7em">- [president Ilves](http://www.itcollege.ee/blog/2014/09/01/president-ilves-teadmistepaeval-eesti-infotehnoloogia-kolledzis-iga-eluala-tulevik-on-digitaalne/)</span>
+
+Kursused toimuvad meie õppeklassis, väikestes gruppides kas üks või kaks korda nädalas, eesti või inglise keeles. Asja mõte on inspireerida ja relvastada, seega kodus asjaga tegelemine on julgustatud. Õppetunni hind on 10€. Õppekava kestus oleneb õpilase ideest ja oskustest, sihime, et üks projekt ei oleks pikem kui kuu aega. Õppeklass saab olema Tallinna kesklinnas, täpne asukoht veel selgumas. Võtame igasse gruppi vastu ühe õpilase tasuta, selleks peab sul eriti äge idee olema.
+
+Põhiliseks juhendajaks on [Krister Viirsaar](http://krister.ee), kes on spetsialiseerunud veebiarenduse ja Meteor.js raamistiku tundmisele. Lisaks on vajadusel võimalus Node.js ja Angular.js raamistikke õppida kogenud arendajalt [Argo Ojavee](http://ee.linkedin.com/pub/argo-ojavee/65/371/669) ning veebidisaini Evert Saarelt.
+
