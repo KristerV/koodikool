@@ -12,4 +12,7 @@ Template.public.rendered = function() {
 	var t = new Trianglify({noiseIntensity: 0});
 	var pattern = t.generate(width, height);
 	$('body').css('background-image', pattern.dataUrl)
+	// var t = new Trianglify({noiseIntensity: 0});
+	// var pattern = t.generate(width, height);
+	$('.sub-block').css('background-image', pattern.dataUrl)
 }
