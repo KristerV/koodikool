@@ -49,25 +49,29 @@ textarea {
 				0px 0px 5px rgba(0,0,0,.2);
 }
 .sub-block {
-	vertical-align: top;
+	vertical-align: middle;
 	display: inline-block;
-	background-color: white;
-	padding: 30px;
-	font-size: 1.2em;
+	position: relative;
+	font-size: 1.3em;
 	margin: 10px;
 	text-align: center;
-	// outline: 7px solid rgba(0,0,0,0.2);
-	box-shadow:	/*0px 0px 0 rgb(228,228,228),
-				0px 1px 0 rgb(210,210,210),
-				0px 2px 0 rgb(193,193,193),
-				0px 3px 0 rgb(175,175,175),
-				0px 4px 0 rgb(158,158,158), 
-				0px 5px 0 rgb(141,141,141),
-				0px 6px 5px rgba(0,0,0,0.6),
-				0px 6px 1px rgba(0,0,0,0.5),*/
-				0px 0px 5px rgba(0,0,0,.2);
+	padding: 30px;
+	box-shadow:	0px 0px 5px rgba(0,0,0,.2);
 	width: 300px;
-	height: 200px;
+	height: 270px;
+	.white {
+		box-shadow:	inset 0px 1px 5px rgba(0,0,0,.2);
+		background-color: rgba(255,255,255,0.9);
+		border-top: 1px solid rgba(0,0,0,0.2);
+		border-bottom: 1px solid rgba(255,255,255,0.2);
+		padding: 30px;
+		margin: auto;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		width: 280px;
+		height: 250px;
+	}
 	&.double-size {
 		max-width: 500px;
 	}
