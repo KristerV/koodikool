@@ -7,6 +7,11 @@ html, body {
 	height:100%;
 	color: white;
 	background-color: black;
+
+    -webkit-transition: background-color 100ms ease-out;
+    -moz-transition: background-color 100ms ease-out;
+    -o-transition: background-color 100ms ease-out;
+    transition: background-color 100ms ease-out;
 }
 
 a:link,
@@ -16,9 +21,18 @@ a:active,
   color: white;
   border-bottom: 1px solid;
   text-decoration: none;
+    -webkit-transition: background-color 100ms ease-out,  margin 100ms ease-out;
+    -moz-transition: background-color 100ms ease-out,  margin 100ms ease-out;
+    -o-transition: background-color 100ms ease-out,  margin 100ms ease-out;
+    transition: background-color 100ms ease-out,  margin 100ms ease-out;
 }
 
 #logo {
+    -webkit-transition: color 100ms ease-out;
+    -moz-transition: color 100ms ease-out;
+    -o-transition: color 100ms ease-out;
+    transition: color 100ms ease-out;
+
 	font-size: 40px;
 	font-weight: bold;
 	padding: 1em;
