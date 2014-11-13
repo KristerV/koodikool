@@ -1,0 +1,53 @@
+@menu-width: 300px;
+
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height:100%;
+	color: white;
+	background-color: black;
+}
+
+a:link,
+a:visited,
+a:active,
+.underline {
+  color: white;
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+#logo {
+	font-size: 40px;
+	font-weight: bold;
+	padding: 1em;
+	margin: auto;
+}
+
+.menu a {
+	border: 0;
+}
+
+.menu {
+	a {
+		padding: 1em;
+		padding-left: 2em;
+	}
+	color: white;
+	position: fixed;
+	top: 0;
+	left: -@menu-width;
+	margin-left: @menu-width;
+	width: @menu-width;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	* {
+		display: block;
+	}
+}
+
+.content {
+	padding: 15px;
+	margin-left: @menu-width + 15px;
+}
