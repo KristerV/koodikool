@@ -1,0 +1,27 @@
+template(name="Profile")
+	.profile
+		form(name="application")
+			section
+				h1 On sul mõni idee, mis nutirakendust või veebiäppi soovid valmistada?
+				p Õppeprotsess on üles ehitatud vastavalt sinu enda ideele, seega kirjuta see siia. Kui sul praegu mõtteid ei ole, siis nii kirjutagi, mõtleme koos midagi lahedat välja.
+				textarea(rows="10" name="idea")
+			section
+				h1 Millal oleks sul hea aeg Tulla?
+				table.calendar
+					thead
+						td.heading
+						td.heading Esm
+						td.heading Tei
+						td.heading Kol
+						td.heading Nel
+						td.heading Ree
+						td.heading Lau
+						td.heading Püh
+					each hours
+						tr(class="{{this}}")
+							td.heading {{this}}:00
+							each days
+								td(class="{{this}}")
+									label
+										input.hour(type="checkbox")
+										span
