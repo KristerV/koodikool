@@ -1,4 +1,4 @@
-Template.Profile.helpers({
+Template.Register.helpers({
 	days: function() {
 		return ['Esmaspäev','Teisipäev','Kolmapäev','Neljapäev','Reede','Laupäev','Pühapäev']
 	},
@@ -11,7 +11,7 @@ Template.Profile.helpers({
 	}
 })
 
-Template.Profile.events({
+Template.Register.events({
 
 	// Start mouse dragging event
 	'mousedown .calendar span': function(e, tmpl) {

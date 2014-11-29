@@ -17,16 +17,24 @@ html, body {
 
 a:link,
 a:visited,
-a:active,
-.underline {
+a:active {
   color: white;
-  border-bottom: 1px solid;
   text-decoration: none;
     -webkit-transition: background-color 100ms ease-out,  margin 100ms ease-out;
     -moz-transition: background-color 100ms ease-out,  margin 100ms ease-out;
     -o-transition: background-color 100ms ease-out,  margin 100ms ease-out;
     transition: background-color 100ms ease-out,  margin 100ms ease-out;
 }
+
+.underline {
+  border-bottom: 1px solid;
+
+}
+
+
+//////////////////////////////////
+////////       MAIN       ////////
+//////////////////////////////////
 
 #logo {
     -webkit-transition: color 100ms ease-out;
@@ -64,15 +72,16 @@ a:active,
 .content {
 	height: 100%;
 	overflow: auto;
-	margin-left: @menu-width + 15px;
+	margin-left: @menu-width;
 	form {
 		padding: 15px;
 	}
 }
 
-.active-button {
-	margin-left: 1em;
-}
+
+//////////////////////////////////
+////////     Modules      ////////
+//////////////////////////////////
 
 textarea, input[type="text"] {
 	background-color: rgba(0,0,0,0.3);
@@ -81,7 +90,120 @@ textarea, input[type="text"] {
 	color: white;
 }
 
-.profile {
+.three-columns {
+	height: 100%;
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	.col {
+		display: table-cell;
+		.center-wrapper {
+			height: 100%;
+		}
+		.center {
+			margin-left: 5%;
+			margin-right: 5%;
+			position: relative;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+		}
+	}
+}
+
+.btn {
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	cursor:pointer;
+	text-decoration:none;
+	border: 0;
+	padding: 1em 4em 1em 4em;
+	&:hover {
+	}
+	&:active {
+		position:relative;
+		top:1px;
+	}
+
+}
+
+//////////////////////////////////
+////////       Views      ////////
+//////////////////////////////////
+
+.home {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	.col:nth-child(2) {
+		background-color: rgba(0,0,0,0.1);
+	}
+	.col:nth-child(3) {
+		background-color: rgba(0,0,0,0.05);
+	}
+	.center {
+		*:first-child {
+			margin-top:0;
+		}
+	}
+}
+
+.hinnad {
+	text-align: center;
+	height: 100%;
+	.col:nth-child(2) {
+		background-color: rgba(0,0,0,0.1);
+	}
+	.col:nth-child(3) {
+		background-color: rgba(0,0,0,0.2);
+	}
+	.title-box {
+		padding: 5%;
+		margin: 0;
+	}
+	.first-bg-color {
+		background-color: #d1c04e;
+		&.btn:hover {
+			background-color: #EBD858;
+		}
+	}
+	.second-bg-color {
+		background-color: #f25755;
+		&.btn:hover {
+			background-color: #FF5C5A;
+		}
+	}
+	.third-bg-color {
+		background-color: #50b849;
+		&.btn:hover {
+			background-color: #5BD153;
+		}
+	}
+	.first-color {
+		color: #d1c04e;
+	}
+	.second-color {
+		color: #f25755;
+	}
+	.third-color {
+		color: #50b849;
+	}
+	.list {
+		display: inline-block;
+		text-align: left;
+		padding: 2em;
+		height: 10em;
+	}
+	.price {
+		font-size: 4em;
+		margin-bottom: 0.5em;
+	}
+}
+
+.register {
 	max-width: 700px;
 	margin: auto;
 	textarea {
@@ -91,51 +213,28 @@ textarea, input[type="text"] {
 	section {
 		height: 100%;
 	}
-}
-
-.calendar {
-	width: 100%;
-	table-layout: fixed;
-	text-align: center;
-	span {
-		background-color: rgba(0,0,0,0.3);
-		display: block; 
+	.calendar {
 		width: 100%;
-		height: 20px;
+		table-layout: fixed;
+		text-align: center;
+		span {
+			background-color: rgba(0,0,0,0.3);
+			display: block; 
+			width: 100%;
+			height: 20px;
+		}
+		:checked + span {
+			background-color: rgba(0,255,0,0.8);
+		}
+		input[type="checkbox"] {
+			display: none;
+		}
+		.heading {
+		}
+		th, td, tr, span, label {
+			border: 0;
+			margin: 0;
+			padding: 0;
+		}
 	}
-	:checked + span {
-		background-color: rgba(0,255,0,0.8);
-	}
-	input[type="checkbox"] {
-		display: none;
-	}
-	.heading {
-	}
-	th, td, tr, span, label {
-		border: 0;
-		margin: 0;
-		padding: 0;
-	}
-}
-
-.three-columns {
-	height: 100%;
-	.col {
-		max-width: 29%;
-		vertical-align: middle;
-		padding: 1.5%;
-		display: inline-block;
-		margin:0;
-		height: 100%;
-	}
-	.col:nth-child(2) {
-		background-color: rgba(0,0,0,0.1);
-	}
-}
-
-.home {
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	height: 100%;
 }
