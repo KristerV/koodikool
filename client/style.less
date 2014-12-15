@@ -111,7 +111,8 @@ a:active {
 //////////////////////////////////
 
 #Register.active-button {
-	margin-left: 22%;
+	width: 100%;
+	margin-left: -10%;
 }
 
 #Register {
@@ -119,13 +120,19 @@ a:active {
 	margin-left: 10%;
 	font-size: 1.5em;
 	text-align: center;
-	border: 1px solid black;
+	// border: 1px solid black;
 	margin-top: 1em;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	border-radius:3px;
+
+	-webkit-transition: width 0.1s ease-in-out, margin 0.1s ease-in-out;
+	-moz-transition: width 0.1s ease-in-out, margin 0.1s ease-in-out;
+	-o-transition: width 0.1s ease-in-out, margin 0.1s ease-in-out;
+	transition: width 0.1s ease-in-out, margin 0.1s ease-in-out;
+
 }
 
 textarea, input[type="text"] {
