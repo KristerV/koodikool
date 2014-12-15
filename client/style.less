@@ -145,13 +145,12 @@ strong {
 }
 
 #Register {
-	width: 63%;
+	width: 75%;
 	text-align: center;
 	margin: 1em auto;
 	padding: 1em 0 1em 0;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;
+	.radius;
+	font-weight: 700;
 
 	-webkit-transition: width 0.1s ease-in-out, margin 0.1s ease-in-out, background-color 0.1s ease-out;;
 	-moz-transition: width 0.1s ease-in-out, margin 0.1s ease-in-out, background-color 0.1s ease-out;;
@@ -168,12 +167,10 @@ textarea, input[type="text"] {
 }
 
 .btn {
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border-radius:5px;
 	cursor:pointer;
 	text-decoration:none;
 	border: 0;
+	.radius;
 	padding: 1em 4em 1em 4em;
 	&:hover {
 	}
@@ -182,6 +179,12 @@ textarea, input[type="text"] {
 		top:1px;
 	}
 
+}
+
+.radius {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
 }
 
 
@@ -219,6 +222,12 @@ textarea, input[type="text"] {
 	.title-box {
 		padding: 5%;
 		margin: 0;
+		font-size: 1.8em;
+		font-weight: 800;
+	}
+	.tick {
+		font-size: 2em;
+		vertical-align: middle;
 	}
 	.first-bg-color {
 		background-color: #d1c04e;
@@ -250,12 +259,20 @@ textarea, input[type="text"] {
 	.list {
 		display: inline-block;
 		text-align: left;
+		margin-top: 3em;
 		padding: 2em;
-		height: 10em;
+		height: 8em;
+		p {
+			margin: 0;
+		}
 	}
 	.price {
-		font-size: 4em;
+		font-size: 5em;
+		font-weight: 700;
 		margin-bottom: 0.5em;
+	}
+	.euro {
+		font-size: 40px;
 	}
 }
 
