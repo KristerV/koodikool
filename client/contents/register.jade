@@ -1,12 +1,14 @@
 template(name="Register")
-	.register.max-width-700
+	.register.content-wide.max-width-700
+		h1 Registreeri
 		form(name="application")
 			section
-				h1 On sul mõni idee, mis nutirakendust või veebiäppi soovid valmistada?
+				h2 On sul mõni idee, mis nutiäppi või veebirakendust soovid valmistada?
 				p Õppeprotsess on üles ehitatud vastavalt sinu enda ideele, seega kirjuta see siia. Kui sul praegu mõtteid ei ole, siis nii kirjutagi, mõtleme koos midagi lahedat välja.
 				textarea(rows="10" name="idea")
 			section
-				h1 Millal oleks sul hea aeg Tulla?
+				h2 Millal oleks sul hea aeg kohal käia?
+				p Põhiline õpe toimub kohapeal, Koodikooli klassis. Millistel aegadel oleks sul hea iga nädal osa võtta?
 				table.calendar
 					thead
 						td.heading
@@ -25,3 +27,12 @@ template(name="Register")
 									label
 										input.hour(type="checkbox")
 										span
+			section
+				h2 Vali omale sobiv pakett
+				+Hinnad
+			section
+				h2 Isiklik info
+				p Nimi
+				p Vanus
+				p Email
+				p Telefoni number
