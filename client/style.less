@@ -1,4 +1,4 @@
-@menu-width: 300px;
+@menu-width: 350px;
 
 html, body {
 	padding: 0;
@@ -41,10 +41,11 @@ a:active {
     -o-transition: color 100ms ease-out;
     transition: color 100ms ease-out;
 
-	font-size: 40px;
-	font-weight: bold;
-	padding: 1em;
+	font-size: 48px;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	margin: auto;
+	font-weight: 800;
 }
 
 .menu a {
@@ -53,7 +54,8 @@ a:active {
 
 .menu {
 	a {
-		padding: 1em;
+		padding: 20px;
+		padding-left: 40px;
 	}
 	color: white;
 	position: fixed;
@@ -77,6 +79,27 @@ a:active {
 	}
 }
 
+//////////////////////////////////
+////////       Font       ////////
+//////////////////////////////////
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:600,700,800);
+
+* {
+	font-family: 'Raleway', Arial, sans-serif;
+	font-weight: 600;
+}
+
+p {
+	font-size: 16px;
+}
+
+.font-bold {
+	font-weight: 800;
+}
+strong {
+    font-weight: 800;
+}
 
 //////////////////////////////////
 ////////     Modules      ////////
@@ -105,6 +128,10 @@ a:active {
 	}
 }
 
+.w700 {
+	margin: 0 auto;
+	max-width: 700px;
+}
 
 //////////////////////////////////
 ////////     Elements     ////////
@@ -112,26 +139,24 @@ a:active {
 
 #Register.active-button {
 	width: 100%;
-	margin-left: -10%;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0;
 }
 
 #Register {
 	width: 63%;
-	margin-left: 10%;
-	font-size: 1.5em;
 	text-align: center;
-	// border: 1px solid black;
-	margin-top: 1em;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
+	margin: 1em auto;
+	padding: 1em 0 1em 0;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	border-radius:3px;
 
-	-webkit-transition: width 0.1s ease-in-out, margin 0.1s ease-in-out;
-	-moz-transition: width 0.1s ease-in-out, margin 0.1s ease-in-out;
-	-o-transition: width 0.1s ease-in-out, margin 0.1s ease-in-out;
-	transition: width 0.1s ease-in-out, margin 0.1s ease-in-out;
+	-webkit-transition: width 0.1s ease-in-out, margin 0.1s ease-in-out, background-color 0.1s ease-out;;
+	-moz-transition: width 0.1s ease-in-out, margin 0.1s ease-in-out, background-color 0.1s ease-out;;
+	-o-transition: width 0.1s ease-in-out, margin 0.1s ease-in-out, background-color 0.1s ease-out;;
+	transition: width 0.1s ease-in-out, margin 0.1s ease-in-out, background-color 0.1s ease-out;;
 
 }
 
@@ -159,10 +184,6 @@ textarea, input[type="text"] {
 
 }
 
-.w700 {
-	margin: 0 auto;
-	max-width: 700px;
-}
 
 //////////////////////////////////
 ////////       Views      ////////
