@@ -9,9 +9,9 @@ template(name="Hinnad")
 					p  
 				.price Tasuta
 				if fullWidth
-					a.btn.first-bg-color.register(href="/Register") Registreeri kursusele
+					a.btn.first-bg-color.select(href="/Register") Vali pakett
 				else
-					a.btn.first-bg-color.register(href="/Register") Vali
+					a.btn.first-bg-color.select(href="/Register") Vali
 			.col(class="{{#if fullWidth}}{{else}}pricebox-selected{{/if}}")
 				.title-box.second-bg-color Starter
 				.list
@@ -20,9 +20,9 @@ template(name="Hinnad")
 					p.font-bold <span class="second-color"><span class="tick">✓</span></span> 8 tundi praktikat
 				.price 80<span class="euro">€</span>
 				if fullWidth
-					a.btn.second-bg-color.register(href="/Register") Registreeri kursusele
+					a.btn.second-bg-color.select(href="/Register") Vali pakett
 				else
-					a.btn.second-bg-color.register(href="/Register") Vali
+					a.btn.second-bg-color.select(href="/Register") Vali
 			.col(class="{{#if fullWidth}}{{else}}pricebox-selected{{/if}}")
 				.title-box.third-bg-color Proff
 				.list
@@ -31,6 +31,6 @@ template(name="Hinnad")
 					p.font-bold <span class="third-color"><span class="tick">✓</span></span> 20 tundi praktikat
 				.price 200<span class="euro">€</span>
 				if fullWidth
-					a.btn.third-bg-color.register(href="/Register") Registreeri kursusele
+					a.btn.third-bg-color.select(href="/Register") Vali pakett
 				else
-					a.btn.third-bg-color.register(href="/Register") Vali
+					a.btn.third-bg-color.select(href="/Register") Vali
