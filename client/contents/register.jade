@@ -1,38 +1,53 @@
 template(name="Register")
-	.register.content-wide.max-width-700
-		h1 Registreeri
+	.register
 		form(name="application")
 			section
-				h2 On sul mõni idee, mis nutiäppi või veebirakendust soovid valmistada?
-				p Õppeprotsess on üles ehitatud vastavalt sinu enda ideele, seega kirjuta see siia. Kui sul praegu mõtteid ei ole, siis nii kirjutagi, mõtleme koos midagi lahedat välja.
-				textarea(rows="10" name="idea")
+				.max-width-700.content-wide
+					h1 Mida tahaksid valmis teha?
+					p Õppeprotsess on üles ehitatud vastavalt sinu enda ideele, mis rakendust soovid vamis teha - seega kirjuta see siia. Tegu võib olla nutitelefoni äppiga kui ka veebirakendus või mäng. Põhimõtteliselt saab teha kõike, ainult aega võtab.
+					textarea(rows="10" name="idea")
 			section
-				h2 Millal oleks sul hea aeg kohal käia?
-				p Põhiline õpe toimub kohapeal, Koodikooli klassis. Millistel aegadel oleks sul hea iga nädal osa võtta?
-				table.calendar
-					thead
-						td.heading
-						td.heading Esm
-						td.heading Tei
-						td.heading Kol
-						td.heading Nel
-						td.heading Ree
-						td.heading Lau
-						td.heading Püh
-					each hours
-						tr(class="{{this}}")
-							td.heading {{this}}:00
-							each days
-								td(class="{{this}}")
-									label
-										input.hour(type="checkbox")
-										span
+				.max-width-700.content-wide
+					h1 Millal klassis saad käia?
+					p Põhiline õpe toimub kohapeal, Koodikooli klassis. Millistel aegadel oleks sul hea iga nädal osa võtta?
+					table.calendar
+						thead
+							td.heading
+							td.heading Esm
+							td.heading Tei
+							td.heading Kol
+							td.heading Nel
+							td.heading Ree
+							td.heading Lau
+							td.heading Püh
+						each hours
+							tr(class="{{this}}")
+								td.heading {{this}}:00
+								each days
+									td(class="{{this}}")
+										label
+											input.hour(type="checkbox")
+											span
 			section
-				h2 Vali omale sobiv pakett
-				+Hinnad
+				.max-width-700.content-wide
+					h1 Vali omale sobiv pakett
+					+Hinnad
 			section
-				h2 Isiklik info
-				p Nimi
-				p Vanus
-				p Email
-				p Telefoni number
+				.max-width-700.content-wide
+					h1 Isiklik info
+					table.medium-text
+						tr
+							td Nimi
+							input(type="text")
+						tr
+							td Vanus
+							input(type="text")
+						tr
+							td Email
+							input(type="text")
+						tr
+							td Telefon
+							input(type="text")
+			section
+				.max-width-700.content-wide.align-center
+					input.btn(type="submit" value="Saada")
