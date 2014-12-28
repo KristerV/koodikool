@@ -20,10 +20,9 @@ Forms = {
 
 		// Does app. exist?
 		var application = Applications.findOne(userHash)
-		console.log(application)
 		if (!application) {
 			Applications.insert({_id: userHash})
 		}
 
-	}
+	},
 }
