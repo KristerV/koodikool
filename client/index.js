@@ -1,1 +1,1 @@
-Meteor.subscribe('applications')
+// Meteor.subscribe('applications')

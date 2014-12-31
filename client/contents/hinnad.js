@@ -4,6 +4,9 @@ Template.Hinnad.helpers({
 		// Is full screen if on "Hinnad" page
 		if (Router.current().route.getName() == "Hinnad")
 			return true
+	},
+	selected: function() {
+		console.log(this)
 	}
 })
 
@@ -29,5 +32,12 @@ Template.Hinnad.events({
 
 		// Save value
 		Forms.saveApplicationValue('pakett', price)
+
+		// Change price glow
+		G.highlightPrice()
 	}
 })
+
+Template.Hinnad.rendered = function() {
+	G.highlightPrice()
+}

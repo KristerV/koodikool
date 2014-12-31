@@ -1,7 +1,7 @@
 template(name="Hinnad")
 	.hinnad
 		.three-columns
-			.col(class="{{#if fullWidth}}{{else}}pricebox-selected{{/if}}")
+			.col(data-price="0")
 				.title-box.first-bg-color Point
 				.list
 					p <span class="tick">✓</span> Põhitõed
@@ -12,7 +12,7 @@ template(name="Hinnad")
 					a.btn.first-bg-color.select(href="/Register") Vali pakett
 				else
 					a.btn.first-bg-color.select(href="/Register") Vali
-			.col(class="{{#if fullWidth}}{{else}}pricebox-selected{{/if}}")
+			.col(data-price="80")
 				.title-box.second-bg-color Starter
 				.list
 					p <span class="tick">✓</span> Põhitõed
@@ -23,7 +23,7 @@ template(name="Hinnad")
 					a.btn.second-bg-color.select(href="/Register") Vali pakett
 				else
 					a.btn.second-bg-color.select(href="/Register") Vali
-			.col(class="{{#if fullWidth}}{{else}}pricebox-selected{{/if}}")
+			.col(data-price="200")
 				.title-box.third-bg-color Proff
 				.list
 					p <span class="tick">✓</span> Põhitõed
