@@ -37,8 +37,14 @@ Forms = {
 		// into email
 		var body = ""
 		_.each(values, function(value, key, list){
-			body += key + ": "
-			body += value + "\n"
+			if (key == 'times') {
+				_.each(value, function(hours, day) {
+					body += day + ": " + hours.join() + "\n"
+				})
+			} else {
+				body += key + ": "
+				body += value + "\n"
+			}
 		})
 		Meteor.call('sendEmail', 'krister.viirsaar@gmail.com', 'postmaster@krister.ee', 'new application', body)
 	}
