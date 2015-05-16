@@ -48,6 +48,24 @@ Template.Register.events({
 
 		// Don't select label text
 		e.preventDefault()
+	},
+	'submit form[name="application"]': function(e) {
+		e.preventDefault()
+		var values = G.getFormValues('application')
+
+		// Calendar values
+		var checked = $('table.calendar *:checked')
+		var cal = {}
+		_.each(checked, function(elem){
+			var day = $(elem).parents('td').first().attr('class')
+			var time = $(elem).parents('tr').first().attr('class')
+			if (!cal[day])
+				cal[day] = []
+			cal[day].push(time)
+		})
+		values['times'] = cal
+		Forms.saveFormValues(values)
+		alert("Avaldus on esitatud, võtame peatselt ühendust!")
 	}
 })
 

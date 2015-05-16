@@ -25,4 +25,21 @@ Forms = {
 		}
 
 	},
+	saveFormValues: function(values) {
+
+		var userHash = Session.get("userHash")
+		if (!userHash)
+			return false
+
+		// into database
+		Applications.update(userHash, {$set: {values}})
+
+		// into email
+		var body = ""
+		_.each(values, function(value, key, list){
+			body += key + ": "
+			body += value + "\n"
+		})
+		Meteor.call('sendEmail', 'krister.viirsaar@gmail.com', 'postmaster@krister.ee', 'new application', body)
+	}
 }
