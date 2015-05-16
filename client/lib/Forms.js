@@ -32,7 +32,7 @@ Forms = {
 			return false
 
 		// into database
-		Applications.update(userHash, {$set: {values}})
+		Applications.update(userHash, {$set: values})
 
 		// into email
 		var body = ""
