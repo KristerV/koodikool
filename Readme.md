@@ -15,6 +15,8 @@ Millist keelt õppida?
 Progemine praktikas
 	Junior - norm - Senior - Arhitekt
 		Keegi tegelikult ei saa öelda, et ta teab kõike programmeerimisest. Saab aga öelda, et saan iga ülesandega hakkama, kui on piisavalt aega. Ja hakkama saabki kasutades kõiki vahendeid mis võimalik: katse-eksitus, keele/platvormi dokumentatsioon, tuttavad, Google, Stack Overflow.
+	Arvuti ei tee vigu
+		Inimesed teevad vigu. Kui programm ei tööta on viga tõenäoliselt sinu koodis. Vähem tõenäoline, aga võimalik, et viga on kellegi teise koodis (API), aga tee enne kindlaks, et sul on kõik õige.
 	Community
 		Ega progejaid väga palju poleks, kui me ei aitaks üksteist. Tarkvara arendus nimelt põhinebki andmisel. Parimad näited on Linux, mida jooksutavad suurem osa maailma serveritest ja on siiski täiesti tasuta tarkvara. Lisaks on Linuxil palju-palju väiksemaid osi, millest suurem osa on tasuta. Aga igapäevasemad näited on kõiksugu programmeerimist abistavad vahendud, mille keegi on suure vaevaga ehitanud, aga siiski on andnud ära tasuta.
 	Kiire areng
@@ -40,6 +42,8 @@ Progemine praktikas
 		Paaris programmeerimine.
 		Scrum.
 		Agile.
+	Miks mitte teha projektipõhiseid eelarve pakkumisi.
+		code.krister.ee artikkel
 	Analüütik - arendaja - arendaja - admin, ehk rollid meeskonnas
 Kursused
 	Java algajatele
