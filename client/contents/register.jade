@@ -3,31 +3,24 @@ template(name="Register")
 		form(name="application")
 			section
 				.max-width-700.content-wide
-					h1 Mida tahaksid valmis teha?
-					p Õppeprotsess on üles ehitatud vastavalt sinu enda ideele, mis rakendust soovid vamis teha - seega kirjuta see siia. Tegu võib olla nutitelefoni äppiga kui ka veebirakendus või mäng. Põhimõtteliselt saab teha kõike, ainult aega võtab.
+					h1 Mis eesmärki soovid koolitusel osaledes täita?
 					textarea(rows="10" name="idea")
 			section
 				.max-width-700.content-wide
-					h1 Millal klassis saad käia?
-					p Põhiline õpe toimub kohapeal, Koodikooli klassis. Millistel aegadel oleks sul hea iga nädal osa võtta?
-					table.calendar
-						thead
-							td.heading
-							td.heading Esm
-							td.heading Tei
-							td.heading Kol
-							td.heading Nel
-							td.heading Ree
-							td.heading Lau
-							td.heading Püh
-						each hours
-							tr(class="{{this}}")
-								td.heading {{this}}:00
-								each days
-									td(class="{{this}}")
+					h1 Mis päevadel sobib sulle koolitusel osaleda?
+					.calendar
+						div(data-month="november")
+							each novemberDays
+								if zero
+									div.cal-cell(data-day="{{this}}" style="opacity:0")
 										label
 											input.hour(type="checkbox")
-											span
+											span {{this}}
+								else
+									div.cal-cell(data-day="{{this}}" class="{{this}}")
+										label
+											input.hour(type="checkbox")
+											span {{this}}
 			section
 				.max-width-700.content-wide
 					h1 Vali omale sobiv pakett
@@ -39,9 +32,6 @@ template(name="Register")
 						tr
 							td Nimi
 							input(type="text" name="name")
-						tr
-							td Vanus
-							input(type="text" name="age")
 						tr
 							td Email
 							input(type="text" name="email")

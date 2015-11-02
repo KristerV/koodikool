@@ -2,12 +2,29 @@ Template.Register.helpers({
 	days: function() {
 		return ['Esmaspäev','Teisipäev','Kolmapäev','Neljapäev','Reede','Laupäev','Pühapäev']
 	},
-	hours: function() {
-		var hours = []
-		for (var i = 8; i <= 22; i++) {
+	novemberDays: function() {
+		var hours = [0,0,0,0,0,0]
+		for (var i = 1; i <= 30; i++) {
 			hours.push(i)
 		};
 		return hours
+	},
+	decemberDays: function() {
+		var hours = [0]
+		for (var i = 1; i <= 18; i++) {
+			hours.push(i)
+		};
+		return hours
+	},
+	januaryDays: function() {
+		var hours = [0,0,0,0]
+		for (var i = 1; i <= 31; i++) {
+			hours.push(i)
+		};
+		return hours
+	},
+	zero: function() {
+		return parseInt(this) === 0
 	}
 })
 
@@ -26,9 +43,9 @@ Template.Register.events({
 		Session.set('checkboxChecked', nowChecked)
 
 		// Save original element for mouseover use
-		var day = t.parent().parent().attr('class')
-		var hour = t.parent().parent().parent().attr('class')
-		var originalCheckboxSelector = '.' + hour + ' .' + day + ' input'
+		var day = t.parent().parent().attr('data-day')
+		var month = t.parent().parent().parent().attr('data-month')
+		var originalCheckboxSelector = 'div[data-month="' + month + '"] div[data-day="' + day + '"] input'
 		Session.set('originalCheckboxSelector', originalCheckboxSelector)
 	},
 	'mouseover .calendar span': function(e, tmpl) {
@@ -40,8 +57,10 @@ Template.Register.events({
 
 			// Check / uncheck original checkbox
 			var origChecbox = $(Session.get('originalCheckboxSelector'))
-			if (check != origChecbox.is(':checked'))
-				origChecbox.prop("checked", check)
+			if (check != origChecbox.is(':checked')) {
+				var a = origChecbox.prop("checked", check)
+				console.log(a);
+			}
 		}
 	},
 	'mousemove .calendar': function(e, tmpl) {
