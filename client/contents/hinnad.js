@@ -22,11 +22,11 @@ Template.Hinnad.events({
 			case "Tasuta":
 				var price = 0
 				break
-			case "80€":
-				var price = 80
+			case "235€":
+				var price = 235
 				break
-			case "200€":
-				var price = 200
+			case "325€":
+				var price = 325
 				break
 		}
 
