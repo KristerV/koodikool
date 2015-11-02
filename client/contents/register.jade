@@ -10,7 +10,34 @@ template(name="Register")
 					h1 Mis päevadel sobib sulle koolitusel osaleda?
 					.calendar
 						div(data-month="november")
+							h2.heading November
 							each novemberDays
+								if zero
+									div.cal-cell(data-day="{{this}}" style="opacity:0")
+										label
+											input.hour(type="checkbox")
+											span {{this}}
+								else
+									div.cal-cell(data-day="{{this}}" class="{{this}}")
+										label
+											input.hour(type="checkbox")
+											span {{this}}
+						div(data-month="december")
+							h2.heading Detsember
+							each decemberDays
+								if zero
+									div.cal-cell(data-day="{{this}}" style="opacity:0")
+										label
+											input.hour(type="checkbox")
+											span {{this}}
+								else
+									div.cal-cell(data-day="{{this}}" class="{{this}}")
+										label
+											input.hour(type="checkbox")
+											span {{this}}
+						div(data-month="january")
+							h2.heading Jaanuar
+							each januaryDays
 								if zero
 									div.cal-cell(data-day="{{this}}" style="opacity:0")
 										label

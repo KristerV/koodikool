@@ -26,6 +26,7 @@ Forms = {
 
 	},
 	saveFormValues: function(values) {
+		console.log(values);
 
 		var userHash = Session.get("userHash")
 		if (!userHash)

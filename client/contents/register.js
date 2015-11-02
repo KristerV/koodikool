@@ -59,7 +59,6 @@ Template.Register.events({
 			var origChecbox = $(Session.get('originalCheckboxSelector'))
 			if (check != origChecbox.is(':checked')) {
 				var a = origChecbox.prop("checked", check)
-				console.log(a);
 			}
 		}
 	},
@@ -73,14 +72,16 @@ Template.Register.events({
 		var values = G.getFormValues('application')
 
 		// Calendar values
-		var checked = $('table.calendar *:checked')
+		var checked = $('.calendar *:checked')
 		var cal = {}
 		_.each(checked, function(elem){
-			var day = $(elem).parents('td').first().attr('class')
-			var time = $(elem).parents('tr').first().attr('class')
-			if (!cal[day])
-				cal[day] = []
-			cal[day].push(time)
+			var day = $(elem).parents('[data-day]').first().attr('data-day')
+			var month = $(elem).parents('[data-month]').first().attr('data-month')
+			if (day === "0")
+				return
+			if (!cal[month])
+				cal[month] = []
+			cal[month].push(day)
 		})
 		values['times'] = cal
 		Forms.saveFormValues(values)
