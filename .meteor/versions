@@ -46,6 +46,7 @@ minimongo@1.0.6
 mobile-status-bar@1.0.2
 mongo@1.0.11
 observe-sequence@1.0.4
+ongoworks:spiderable@1.0.7
 ordered-dict@1.0.2
 random@1.0.2
 reactive-dict@1.0.5
@@ -57,7 +58,6 @@ service-configuration@1.0.3
 session@1.0.5
 spacebars@1.0.4
 spacebars-compiler@1.0.4
-spiderable@1.0.6
 templating@1.0.10
 tracker@1.0.4
 ui@1.0.5
