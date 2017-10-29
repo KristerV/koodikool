@@ -233,3 +233,8 @@ a:active {
 .title-avatar-container {
   text-align: center;
 }
+
+
+body {
+  padding-bottom: 10em;
+}
