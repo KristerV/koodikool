@@ -1,0 +1,30 @@
+<!-- See on kommentaar ja see koodi ära ei riku -->
+
+<!-- <html> tagi pole tegelikult vaja, sest browser on väga andestav -->
+<html>
+	<!-- <head> sisse käib selline "meta" info, mis muudab lehe käitumist, aga otseselt lehel näha ei ole -->
+	<head>
+		<title>Minu tuus veebileht</title> <!-- See läheb browseri tabi pealkirjaks -->
+		<link rel="stylesheet" type="text/css" href="index.css"> <!-- Käsk mis ütleb "kasuta index.css faili kujunduse jaoks" -->
+	</head>
+	<!-- Paljudel tagidel on </lõpp> tag ka. -->
+
+	<!-- <body> sees olevaid asju näed leheküljel -->
+	<body>
+		<p class="superwide">Tere, <br>minu nimi õpn Krister!</p> <!-- <p> on lihtsalt paragraaf, ehk tavaline tekst -->
+
+		<!-- <form>'i kasutame väljade grupeerimiseks. -->
+		<form>
+
+			<!-- <input> kasutame kui tahame kasutajalt mingit sisendit. Näiteks nime või nupu vajutust. -->
+			<input name="username"/><br> <!-- <br> on "uus rida" või "break" -->
+			<!-- type määrab kuidas input käitub. Näiteks "password" type peidab tähed mummude alla -->
+			<input class="superwide" name="password" type="password"/><br> 
+			<input type="date"> <!-- type="date" kuvab mugava kuupäeva valimise akna. -->
+			<input type="submit"> <!-- Submit on "Saada" nupp, mis saadab <form>'i serverile. Kui see olemas on. -->
+		</form>
+
+		<!-- Järgnev rida laeb sisse JA käivitab Javascript koodi -->
+		<script src="index.js"></script>
+	</body>
+</html>
