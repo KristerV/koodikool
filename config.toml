@@ -1,0 +1,4 @@
+baseURL = "http://koodikool.ee/"
+languageCode = "et"
+title = "Koodikool"
+theme="hugo-theme-cactus-plus"
